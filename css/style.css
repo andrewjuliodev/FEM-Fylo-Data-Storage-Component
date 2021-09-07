@@ -29,6 +29,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 @media screen and (min-width: 1440px) {
@@ -81,6 +82,9 @@ body {
   height: 160px;
   background-color: hsl(228, 56%, 26%);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .dashboard,
@@ -89,6 +93,44 @@ body {
   flex-direction: row;
 }
 
+.dashboard {
+  width: 260px;
+  height: 20px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.bar {
+  width: 196px;
+  height: 14px;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 15px;
+}
+
+.barPoint {
+  width: 11px;
+  height: 11px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  margin-left: -14px;
+}
+
+.storageLeft {
+  width: 180px;
+  height: 70px;
+  background-color: white;
+  border-radius: 10px;
+  color: hsl(229, 57%, 11%);
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .gbLeft {
-  background-color: hsl(229, 7%, 55%);
+  color: hsl(229, 7%, 55%);
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 10px;
 }
