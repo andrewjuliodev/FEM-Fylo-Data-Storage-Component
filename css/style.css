@@ -31,7 +31,17 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  background: hsl(229, 57%, 11%);
+  background-image: url("/images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-color: hsl(229, 57%, 11%);
+}
+
+@media screen and (max-width: 440px) {
+  body {
+    background-image: url("/images/bg-mobile.png");
+    background-color: hsl(229, 57%, 11%);
+  }
 }
 
 .container {
@@ -62,7 +72,7 @@ body {
     height: 205px;
   }
 }
-
+/*FYLO CARD*/
 .fyloCard {
   display: flex;
   flex-direction: column;
@@ -90,6 +100,11 @@ body {
   flex-direction: row;
 }
 
+.option:hover {
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  opacity: 70%;
+}
+
 .logo,
 .options,
 .dashboard,
@@ -112,6 +127,7 @@ body {
   }
 }
 
+/*STORAGE CARD*/
 .storageCard {
   width: 330px;
   height: 160px;
@@ -123,7 +139,7 @@ body {
   color: hsl(243, 100%, 93%);
 }
 
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 1440px) {
   .storageCard {
     width: 545px;
   }
@@ -190,6 +206,19 @@ body {
 
 @media screen and (min-width: 740px) {
   .dashboard {
+    width: 260px;
+    margin-right: 36px;
+  }
+  .bar {
+    width: 196px;
+  }
+  .to {
+    margin-left: 183px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .dashboard {
     width: 460px;
     margin-right: 36px;
   }
@@ -201,6 +230,7 @@ body {
   }
 }
 
+/*STORAGE LEFT CARD*/
 .storageLeft {
   width: 180px;
   height: 70px;
@@ -224,12 +254,26 @@ body {
 }
 
 @media screen and (min-width: 740px) {
+  .remaining {
+    margin-top: -210px;
+    margin-left: 465px;
+  }
+
   .storageLeft {
     margin: 0;
+    border-radius: 10px 10px 0 10px;
+  }
+
+  .pointer {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-top: 20px solid white;
+    margin-left: 160px;
   }
 }
 
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 1440px) {
   .remaining {
     margin-top: -205px;
     margin-left: 635px;
@@ -237,5 +281,14 @@ body {
 
   .storageLeft {
     margin: 0;
+    border-radius: 10px 10px 0 10px;
+  }
+
+  .pointer {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-top: 20px solid white;
+    margin-left: 160px;
   }
 }
