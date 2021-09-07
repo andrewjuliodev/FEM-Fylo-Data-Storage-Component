@@ -26,11 +26,42 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
+  body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: -50%, -50%;
+  }
 }
-body {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: -50%, -50%;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 380px;
+}
+
+.fyloCard {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 205px;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+}
+
+.storageCard {
+  width: 330px;
+  height: 160px;
+  width: 90%;
+  height: 30%;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
 }
