@@ -34,6 +34,7 @@ body {
   background-image: url("/images/bg-desktop.png");
   background-repeat: no-repeat;
   background-position-y: bottom;
+  background-position-x: center;
   background-color: hsl(229, 57%, 11%);
 }
 
