@@ -10,9 +10,9 @@
   text-decoration: none;
 }
 
-.frame {
+/*.frame {
   border: 1px dotted red;
-}
+}*/
 
 /*BODY*/
 html {
@@ -30,6 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  background: hsl(229, 57%, 11%);
 }
 
 @media screen and (min-width: 1440px) {
@@ -57,15 +58,24 @@ body {
   background-color: hsl(228, 56%, 26%);
   border-radius: 10px 100px 10px 10px;
   margin-bottom: 18px;
+  justify-content: space-evenly;
 }
 
 .logo {
-  width: 50%;
+  width: 138px;
+  height: 40px;
 }
 
 .options {
   display: flex;
   flex-direction: row;
+}
+
+.logo,
+.options,
+.dashboard,
+.range {
+  margin-left: 36px;
 }
 
 .option {
@@ -74,7 +84,7 @@ body {
   border-radius: 12px;
   background-color: hsl(229, 57%, 11%);
   object-fit: scale-down;
-  margin-right: 18px;
+  margin-right: 16px;
 }
 
 .storageCard {
@@ -85,6 +95,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: hsl(243, 100%, 93%);
+}
+
+.storageMessage {
+  margin-top: -20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.used {
+  font-weight: 700;
 }
 
 .dashboard,
@@ -107,25 +128,41 @@ body {
   height: 14px;
   background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   border-radius: 15px;
+  margin-left: 3px;
 }
 
 .barPoint {
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   background-color: antiquewhite;
   border-radius: 50%;
   margin-left: -14px;
 }
 
+.range {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.to {
+  margin-left: 185px;
+}
+
 .storageLeft {
   width: 180px;
   height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   border-radius: 10px;
   color: hsl(229, 57%, 11%);
   font-size: 40px;
   font-weight: 700;
   text-align: center;
+  margin-left: 75px;
+  margin-top: -35px;
 }
 
 .gbLeft {
